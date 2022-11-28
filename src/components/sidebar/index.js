@@ -8,7 +8,7 @@ const Sidebar = ({ children }) => {
         <li className="relative" key={`${index}-${el.url}`}>
           <Link to={el.url}>
             {el.icon}
-            <span className="px-3 text-base">{el.text}</span>
+            <span className="px-3 text-xl">{el.text}</span>
           </Link>
         </li>
       );

@@ -1,6 +1,9 @@
 import { IconContext } from "react-icons";
 
-import { FaRegBuilding as Sales, FaBook as Commissions } from "react-icons/fa";
+import {
+  FaCashRegister as Sales,
+  FaCalculator as Commissions,
+} from "react-icons/fa";
 
 const sidebarElementsList = [
   {
@@ -8,7 +11,7 @@ const sidebarElementsList = [
     text: "Sales",
     icon: (
       <>
-        <IconContext.Provider value={{ size: "17" }}>
+        <IconContext.Provider value={{ size: "22" }}>
           <Sales />
         </IconContext.Provider>
       </>
@@ -19,7 +22,7 @@ const sidebarElementsList = [
     text: "Commisoes",
     icon: (
       <>
-        <IconContext.Provider value={{ size: "17" }}>
+        <IconContext.Provider value={{ size: "22" }}>
           <Commissions />
         </IconContext.Provider>
       </>
