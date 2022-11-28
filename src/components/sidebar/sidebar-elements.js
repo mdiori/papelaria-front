@@ -8,7 +8,7 @@ import {
 const sidebarElementsList = [
   {
     url: "/",
-    text: "Sales",
+    text: "Vendas",
     icon: (
       <>
         <IconContext.Provider value={{ size: "22" }}>
@@ -19,7 +19,7 @@ const sidebarElementsList = [
   },
   {
     url: "/commissions",
-    text: "Commisoes",
+    text: "Comissões",
     icon: (
       <>
         <IconContext.Provider value={{ size: "22" }}>
