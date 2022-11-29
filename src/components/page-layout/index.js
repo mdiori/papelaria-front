@@ -5,8 +5,8 @@ const PageLayout = ({ children }) => {
     <div>
       <Sidebar>
         <Header />
-        <div id="page" className="mt-24">
-          {children}
+        <div id="page">
+          <div className="mx-20 mt-32 mb-20">{children}</div>
         </div>
       </Sidebar>
     </div>
