@@ -4,7 +4,7 @@ import PageLayout from "../../components/page-layout";
 import SalesTable from "./components/sales-table";
 
 const Sales = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [sales, setSales] = useState([]);
 
   useEffect(() => {
@@ -25,35 +25,28 @@ const Sales = () => {
 
   return (
     <PageLayout>
-      {!loading && (
-        <>
+      {loading ? (
+        <p>Carregando</p>
+      ) : (
+        <div className="flex flex-col ">
           <div className="navbar flex-col">
             <div className="w-full">
               <div className="flex-1">
-                <h1 className="text-4xl">Vendas Realizadas</h1>
-              </div>
-
-              <div className="flex-none">
-                <input
-                  type="text"
-                  placeholder="Pesquisar"
-                  className="input input-bordered input-primary"
-                />
+                <h1 className="text-4xl text-appgreen">Vendas Realizadas</h1>
               </div>
 
               <div className="ml-3 flex-none">
-                <label
-                  htmlFor="my-modal-3"
-                  className="btn btn-primary modal-button"
-                >
+                <label className="btn rounded-sm bg-appgreen">
                   Inserir nova Venda
                 </label>
               </div>
             </div>
           </div>
 
-          <SalesTable sales={sales} />
-        </>
+          <div className="max-h-[70vh] overflow-scroll mt-8">
+            <SalesTable sales={sales} />
+          </div>
+        </div>
       )}
     </PageLayout>
   );

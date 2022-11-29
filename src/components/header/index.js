@@ -2,7 +2,7 @@ import logo from "../../images/logoipsum.svg";
 
 const Header = () => {
   return (
-    <div className="navbar h-24 bg-gray-100 fixed z-50">
+    <div className="navbar h-24 bg-appgray fixed z-50 shadow-lg">
       <div className="flex-none">
         <label htmlFor="my-drawer" className="drawer-button">
           <svg

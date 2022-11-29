@@ -25,7 +25,7 @@ const Commissions = () => {
 const Edit = () => {
   return (
     <>
-      <IconContext.Provider value={{ size: "22" }}>
+      <IconContext.Provider value={{ size: "22", color: "#00585e" }}>
         <FaEdit />
       </IconContext.Provider>
     </>
@@ -35,7 +35,7 @@ const Edit = () => {
 const Trash = () => {
   return (
     <>
-      <IconContext.Provider value={{ size: "22" }}>
+      <IconContext.Provider value={{ size: "22", color: "#BE0000" }}>
         <FaTrash />
       </IconContext.Provider>
     </>

@@ -40,29 +40,31 @@ const SalesTable = ({ sales }) => {
       return (
         <React.Fragment key={id}>
           <tr>
-            <th>{invoice}</th>
-            <th>{client.name}</th>
-            <th>{employee.name}</th>
-            <th>{formatDate(date)}</th>
-            <th>{formatMoney(totalValue)}</th>
-            <th className="flex">
-              <div className="flex-2">
-                <button id={`btn-${id}`} onClick={() => showSaleDetails(id)}>
-                  Ver Itens
+            <td>{invoice}</td>
+            <td>{client.name}</td>
+            <td>{employee.name}</td>
+            <td>{formatDate(date)}</td>
+            <td>{formatMoney(totalValue)}</td>
+            <td>
+              <div className="grid grid-cols-12 text-appgreen font-[600]">
+                <div className="col-span-6">
+                  <button id={`btn-${id}`} onClick={() => showSaleDetails(id)}>
+                    <p>Ver Itens</p>
+                  </button>
+                </div>
+                <button className="col-span-3">
+                  <Edit />
+                </button>
+                <button className="col-span-3">
+                  <Trash />
                 </button>
               </div>
-              <div className="flex-1 grid place-items-center">
-                <Edit />
-              </div>
-              <div className="flex-1 grid place-items-center">
-                <Trash />
-              </div>
-            </th>
+            </td>
           </tr>
           <tr>
-            <th id={`info-${id}`} className="hidden" colSpan={6}>
+            <td id={`info-${id}`} className="hidden" colSpan={6}>
               {saleDetailsTable(sale_products)}
-            </th>
+            </td>
           </tr>
         </React.Fragment>
       );
@@ -71,15 +73,15 @@ const SalesTable = ({ sales }) => {
 
   return (
     <>
-      <table className="table w-full mt-8">
-        <thead className="bg-white-100">
+      <table id="sale-table" className="sale-table w-full">
+        <thead className="bg-white-100 sticky top-0">
           <tr>
             <th>Nota Fiscal</th>
             <th>Cliente</th>
             <th>Vendedor</th>
             <th>Data da Venda</th>
             <th>Valor Total</th>
-            <th>Opções</th>
+            <th className="w-64">Opções</th>
           </tr>
         </thead>
         <tbody>{salesTableBody()}</tbody>

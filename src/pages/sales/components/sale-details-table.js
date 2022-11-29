@@ -15,24 +15,24 @@ const saleDetailsTable = (sale_products) => {
 
       return (
         <tr key={`sale-details-table-${id}`}>
-          <th>{`${code} - ${name}`}</th>
-          <th>{quantity}</th>
-          <th>{formatMoney(value)}</th>
-          <th>{formatMoney(quantity * value)}</th>
-          <th></th>
-          <th></th>
+          <td>{`${code} - ${name}`}</td>
+          <td>{quantity}</td>
+          <td>{formatMoney(value)}</td>
+          <td>{formatMoney(quantity * value)}</td>
+          <td></td>
+          <td></td>
         </tr>
       );
     });
 
     talbeRows.push(
-      <tr key="sale-details-table">
-        <th>Total da Venda</th>
-        <th>{totalQuantity}</th>
-        <th></th>
-        <th>{formatMoney(totalValue)}</th>
-        <th></th>
-        <th>{formatMoney(totalCommission)}</th>
+      <tr key="sale-details-table" className="text-appgreen font-[600]">
+        <td>Total da Venda</td>
+        <td>{totalQuantity}</td>
+        <td></td>
+        <td>{formatMoney(totalValue)}</td>
+        <td></td>
+        <td>{formatMoney(totalCommission)}</td>
       </tr>
     );
 
@@ -40,7 +40,7 @@ const saleDetailsTable = (sale_products) => {
   };
 
   return (
-    <table className="table w-full">
+    <table id="sale-details-table" className="w-full">
       <thead>
         <tr>
           <th>Produtos/Serviços</th>

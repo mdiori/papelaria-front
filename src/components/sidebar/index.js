@@ -24,7 +24,7 @@ const Sidebar = ({ children }) => {
         <div className="drawer-content">{children}</div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
-          <ul className="menu p-4 overflow-y-auto w-72 bg-gray-100 text-base-content">
+          <ul className="menu p-4 overflow-y-auto w-72 bg-appgray text-base-content mt-24">
             <SidebarBody />
           </ul>
         </div>
