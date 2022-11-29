@@ -24,9 +24,13 @@ const Sales = () => {
   };
 
   return (
-    <PageLayout>
+    <PageLayout title="Vendas">
       {loading ? (
-        <p>Carregando</p>
+        <div class="flex h-screen">
+          <div class="mx-auto mt-44">
+            <h3>Carregando</h3>
+          </div>
+        </div>
       ) : (
         <div className="flex flex-col ">
           <div className="navbar flex-col">
