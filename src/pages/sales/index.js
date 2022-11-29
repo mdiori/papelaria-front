@@ -28,7 +28,7 @@ const Sales = () => {
       {loading ? (
         <div class="flex h-screen">
           <div class="mx-auto mt-44">
-            <h3>Carregando</h3>
+            <h3 className="text-4xl text-appgreen">Carregando...</h3>
           </div>
         </div>
       ) : (
