@@ -16,17 +16,17 @@ const SalesTable = ({ sales }) => {
     return totalValue;
   };
 
-  const showItens = (id) => {
-    let saleInfoBox = document.querySelector(`#info-${id}`);
+  const showSaleDetails = (id) => {
+    let saleDetails = document.querySelector(`#info-${id}`);
     let button = document.querySelector(`#btn-${id}`);
 
-    if (saleInfoBox.classList.contains("hidden")) {
-      saleInfoBox.classList.remove("hidden");
+    if (saleDetails.classList.contains("hidden")) {
+      saleDetails.classList.remove("hidden");
       button.innerHTML = "Fechar";
       return;
     }
 
-    saleInfoBox.classList.add("hidden");
+    saleDetails.classList.add("hidden");
     button.innerHTML = "Ver Itens";
     return;
   };
@@ -47,7 +47,7 @@ const SalesTable = ({ sales }) => {
             <th>{formatMoney(totalValue)}</th>
             <th className="flex">
               <div className="flex-2">
-                <button id={`btn-${id}`} onClick={() => showItens(id)}>
+                <button id={`btn-${id}`} onClick={() => showSaleDetails(id)}>
                   Ver Itens
                 </button>
               </div>
