@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import api from "../../services/api";
 import PageLayout from "../../components/page-layout";
 import SalesTable from "./components/sales-table";
+import { Link } from "react-router-dom";
 
 const Sales = () => {
   const [loading, setLoading] = useState(true);
@@ -26,8 +27,8 @@ const Sales = () => {
   return (
     <PageLayout title="Vendas">
       {loading ? (
-        <div class="flex h-screen">
-          <div class="mx-auto mt-44">
+        <div className="flex h-screen">
+          <div className="mx-auto mt-44">
             <h3 className="text-4xl text-appgreen">Carregando...</h3>
           </div>
         </div>
@@ -40,9 +41,11 @@ const Sales = () => {
               </div>
 
               <div className="ml-3 flex-none">
-                <label className="btn rounded-sm bg-appgreen">
-                  Inserir nova Venda
-                </label>
+                <Link to="/sale/configuration" state={{ sale: null }}>
+                  <label className="btn rounded-sm bg-appgreen">
+                    Inserir nova Venda
+                  </label>
+                </Link>
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import formatDate from "../../../utils/format-date";
 import formatMoney from "../../../utils/format-money";
 import saleDetailsTable from "./sale-details-table";
 import { Edit, Trash } from "../../../utils/icons";
+import { Link } from "react-router-dom";
 
 const SalesTable = ({ sales }) => {
   const calculateTotalSaleValue = (sale_products) => {
@@ -32,7 +33,7 @@ const SalesTable = ({ sales }) => {
   };
 
   const salesTableBody = () => {
-    return sales?.map((sale) => {
+    return sales?.map((sale, index) => {
       const {
         id,
         invoice,
@@ -61,9 +62,16 @@ const SalesTable = ({ sales }) => {
                     <p>Ver Itens</p>
                   </button>
                 </div>
-                <button className="col-span-3">
-                  <Edit />
-                </button>
+                <Link
+                  className="col-span-3"
+                  to="/sale/configuration"
+                  state={{ sale, index }}
+                >
+                  <button className="col-span-3">
+                    <Edit />
+                  </button>
+                </Link>
+
                 <button className="col-span-3">
                   <Trash />
                 </button>
