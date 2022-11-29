@@ -1,32 +1,15 @@
-import { IconContext } from "react-icons";
-
-import {
-  FaCashRegister as Sales,
-  FaCalculator as Commissions,
-} from "react-icons/fa";
+import { Sales, Commissions } from "../../utils/icons";
 
 const sidebarElementsList = [
   {
     url: "/",
     text: "Vendas",
-    icon: (
-      <>
-        <IconContext.Provider value={{ size: "22" }}>
-          <Sales />
-        </IconContext.Provider>
-      </>
-    ),
+    icon: <Sales />,
   },
   {
     url: "/commissions",
     text: "Comissões",
-    icon: (
-      <>
-        <IconContext.Provider value={{ size: "22" }}>
-          <Commissions />
-        </IconContext.Provider>
-      </>
-    ),
+    icon: <Commissions />,
   },
 ];
 
