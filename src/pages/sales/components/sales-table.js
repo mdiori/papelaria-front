@@ -33,7 +33,16 @@ const SalesTable = ({ sales }) => {
 
   const salesTableBody = () => {
     return sales?.map((sale) => {
-      const { id, invoice, client, employee, date, sale_products } = sale;
+      const {
+        id,
+        invoice,
+        client,
+        employee,
+        date,
+        sale_products,
+        commission_min,
+        commission_max,
+      } = sale;
 
       const totalValue = calculateTotalSaleValue(sale_products);
 
@@ -63,7 +72,7 @@ const SalesTable = ({ sales }) => {
           </tr>
           <tr>
             <td id={`info-${id}`} className="hidden" colSpan={6}>
-              {saleDetailsTable(sale_products)}
+              {saleDetailsTable(commission_min, commission_max, sale_products)}
             </td>
           </tr>
         </React.Fragment>
