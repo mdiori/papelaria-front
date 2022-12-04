@@ -1,6 +1,6 @@
 const formatDate = (date) => {
   const newDate = new Date(date);
-  let day = newDate.getDay();
+  let day = newDate.getDate();
   let month = newDate.getMonth();
   const year = newDate.getFullYear();
   let hour = newDate.getHours();
