@@ -6,6 +6,7 @@ const Toast = Swal.mixin({
   showConfirmButton: false,
   timer: 1700,
   timerProgressBar: true,
+  width: 500,
 });
 
 export function success(message) {
