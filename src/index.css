@@ -29,7 +29,7 @@ td {
 }
 
 #sale-table > thead > tr > th {
-  border-bottom: 2px solid #888888;
+  border-bottom: 1px solid #888888;
   background-color: #ffffff;
   line-height: 60px;
 }

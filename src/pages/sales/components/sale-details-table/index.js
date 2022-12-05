@@ -1,4 +1,4 @@
-import formatMoney from "../../../utils/format-money";
+import formatMoney from "../../../../utils/format-money";
 
 const saleDetailsTable = (commission_min, commission_max, sale_products) => {
   const calculateCommissionValidPercentage = (commission) => {
