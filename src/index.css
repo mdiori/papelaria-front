@@ -34,7 +34,7 @@ td {
   line-height: 60px;
 }
 
-#sale-table > tbody > tr > td {
+.striped_table > tbody > tr > td {
   border-bottom: 1px solid #888888;
 }
 

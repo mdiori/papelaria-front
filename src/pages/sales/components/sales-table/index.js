@@ -90,7 +90,7 @@ const SalesTable = ({ sales }) => {
 
   return (
     <>
-      <table id="sale-table" className="sale-table w-full">
+      <table id="sale-table" className="sale-table w-full striped_table">
         <thead className="bg-white-100 sticky top-0">
           <tr>
             <th>Nota Fiscal</th>
