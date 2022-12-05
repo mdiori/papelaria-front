@@ -1,6 +1,12 @@
 import { IconContext } from "react-icons";
 
-import { FaCashRegister, FaCalculator, FaEdit, FaTrash } from "react-icons/fa";
+import {
+  FaCashRegister,
+  FaCalculator,
+  FaEdit,
+  FaTrash,
+  FaSearch,
+} from "react-icons/fa";
 
 const Sales = () => {
   return (
@@ -42,4 +48,14 @@ const Trash = () => {
   );
 };
 
-export { Sales, Commissions, Edit, Trash };
+const Search = () => {
+  return (
+    <>
+      <IconContext.Provider value={{ size: "22", color: "#FFFFFF" }}>
+        <FaSearch />
+      </IconContext.Provider>
+    </>
+  );
+};
+
+export { Sales, Commissions, Edit, Trash, Search };
