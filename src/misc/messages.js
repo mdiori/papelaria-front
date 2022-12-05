@@ -6,6 +6,7 @@ const messages = {
       select_employee_and_client: "Selecionar vendedor e cliente.",
       sale_edition: "Erro ao tentar editar venda.",
       sale_creation: "Erro ao tentar criar nova venda.",
+      select_initial_and_end_date: "Selecionar data de início e fim.",
     },
     success: {
       sale_edition: "Venda editada com sucesso.",
