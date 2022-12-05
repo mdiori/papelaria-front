@@ -51,7 +51,7 @@ const Sales = () => {
           </div>
 
           <div className="max-h-[70vh] overflow-scroll mt-8">
-            <SalesTable sales={sales} />
+            <SalesTable sales={sales} getSales={getSales} />
           </div>
         </div>
       )}
