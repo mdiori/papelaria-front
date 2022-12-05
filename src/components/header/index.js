@@ -23,7 +23,7 @@ const Header = ({ title }) => {
         <img alt="logo" src={logo} />
       </div>
       <div className="flex-1 flex justify-center mr-80">
-        <p className="text-4xl text-appgreen font-extrabold">{title}</p>
+        <p className="text-[32px] text-appgreen font-extrabold">{title}</p>
       </div>
     </div>
   );

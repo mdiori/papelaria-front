@@ -298,12 +298,12 @@ const SaleConfiguration = () => {
             <div>
               <form
                 onSubmit={(e) => handleAddProducts(e)}
-                className="grid grid-cols-5 pt-8"
+                className="grid grid-cols-8 pt-8"
               >
-                <div className="col-span-3 mr-8">
+                <div className="col-span-4 mr-8">
                   <div className="form-control w-full">
                     <label className="label">
-                      <span className="label-text text-xl">
+                      <span className="label-text text-sm">
                         Buscar pelo código de barras ou descrição
                       </span>
                     </label>
@@ -318,26 +318,26 @@ const SaleConfiguration = () => {
                     />
                   </div>
                 </div>
-                <div className="col-span-1 mr-8">
+                <div className="col-span-2 mr-8">
                   <div className="form-control w-full">
                     <label className="label">
-                      <span className="label-text text-xl">
+                      <span className="label-text text-sm">
                         Quantidade de itens
                       </span>
                     </label>
                     <input
                       id="qunatity"
                       name="quantity"
-                      className="input input-bordered w-full rounded-sm h-16 text-xl"
+                      className="input input-bordered w-full rounded-sm h-[44px] text-sm"
                       type="number"
                       placeholder="0"
                       min="1"
                     />
                   </div>
                 </div>
-                <div className="col-span-1 my-auto mt-11">
+                <div className="col-span-1 my-auto mt-9">
                   <button
-                    className="btn rounded-sm bg-appgreen h-16 w-40"
+                    className="btn rounded-sm bg-appgreen h-12 w-40"
                     button="submit"
                   >
                     Adicionar
@@ -346,9 +346,9 @@ const SaleConfiguration = () => {
               </form>
             </div>
 
-            <div className="flex flex-col mt-24">
+            <div className="flex flex-col mt-24 max-h-[50%] overflow-scroll">
               <table>
-                <thead>
+                <thead className="bg-black sticky top-0">
                   <tr>
                     <th>Produtos/Serviços</th>
                     <th>Quantidade</th>
@@ -365,7 +365,7 @@ const SaleConfiguration = () => {
           <div className="col-span-1">
             <div className="flex flex-row">
               <div className="basis-auto">
-                <h1 className="text-3xl ml-8">Dados da venda</h1>
+                <h1 className="text-[24px] ml-8">Dados da venda</h1>
               </div>
             </div>
 
@@ -380,22 +380,22 @@ const SaleConfiguration = () => {
                       <div className="w-full">
                         <div className="form-control w-full">
                           <label className="label">
-                            <span className="label-text text-xl">
+                            <span className="label-text text-sm">
                               Data e Hora da Venda
                             </span>
                           </label>
 
                           <input
-                            className="input input-bordered w-full rounded-sm h-16 text-xl"
+                            className="input input-bordered w-full rounded-sm h-[44px] text-sm"
                             type="text"
                             placeholder="Data e hora"
                             disabled
                             value={saleTime}
                           />
                         </div>
-                        <div className="form-control w-full pt-12">
+                        <div className="form-control w-full pt-4">
                           <label className="label">
-                            <span className="label-text text-xl">
+                            <span className="label-text text-sm">
                               Escolha um vendedor
                             </span>
                           </label>
@@ -411,9 +411,9 @@ const SaleConfiguration = () => {
                             value={selectedEmployee}
                           />
                         </div>
-                        <div className="form-control w-full pt-12">
+                        <div className="form-control w-full pt-4">
                           <label className="label">
-                            <span className="label-text text-xl">
+                            <span className="label-text text-sm">
                               Escolha um cliente
                             </span>
                           </label>
@@ -433,7 +433,7 @@ const SaleConfiguration = () => {
                 </div>
                 <div className="ml-8 mb-20 mr-10 mt-auto w-full absolute bottom-0">
                   <div className="grid grid-cols-8 w-[30%]">
-                    <div className="col-span-4 text-xl font-bold">
+                    <div className="col-span-4 text-xl h-[24px] font-bold">
                       <h1>Valor total da venda:</h1>
                     </div>
                     <div className="col-start-6 col-span-3 text-3xl font-extrabold">
@@ -444,7 +444,7 @@ const SaleConfiguration = () => {
                   <div className="flex justify-between pt-10  w-[30%]">
                     <Link to="/">
                       <button
-                        className="btn rounded-sm bg-appgreen h-14 w-40"
+                        className="btn rounded-sm bg-appgreen h-[44px] w-40"
                         type="button"
                       >
                         Cancelar
@@ -452,7 +452,7 @@ const SaleConfiguration = () => {
                     </Link>
 
                     <button
-                      className="btn rounded-sm bg-appgreen h-14 w-40 text-xl"
+                      className="btn rounded-sm bg-appgreen h-[44px] w-40 text-lg"
                       type="submit"
                     >
                       Finalizar

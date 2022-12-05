@@ -5,30 +5,30 @@ const reactSelectStyle = {
   control: (provided, state) => ({
     ...provided,
     background: "#fff",
-    minHeight: "65px",
-    height: "50px",
+    minHeight: "44px",
+    height: "44px",
     boxShadow: state.isFocused ? null : null,
     borderRadius: "2px",
-    fontSize: "18px",
+    fontSize: "14px",
   }),
 
   valueContainer: (provided, state) => ({
     ...provided,
-    height: "30px",
+    height: "44px",
     padding: "0 6px",
   }),
 
   input: (provided, state) => ({
     ...provided,
     fontWeight: "4px",
-    fontSize: 18,
+    fontSize: 14,
   }),
   indicatorSeparator: (state) => ({
     display: "none",
   }),
   indicatorsContainer: (provided, state) => ({
     ...provided,
-    height: "50px",
+    height: "44px",
   }),
 };
 

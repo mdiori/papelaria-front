@@ -42,3 +42,7 @@ table#sale-details-table > tbody > tr:last-child > td {
   font-weight: 600;
   font-size: 18px;
 }
+
+#product-table > thead > tr > th {
+  background-color: #ffffff;
+}
