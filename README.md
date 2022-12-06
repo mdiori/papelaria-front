@@ -1,5 +1,15 @@
 # Frontend - Aplicação de controle de comissões de uma papelaria
 
+## App
+
+* Live: http://34.206.21.27:3000/
+
+## Admin
+
+* Admin: http://34.206.21.27:8000/admin
+* User: admin
+* Pass: password
+
 ## 1 - Requisitos
 
 - Nodejs.
