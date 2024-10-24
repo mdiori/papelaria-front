@@ -1,9 +1,5 @@
 # Frontend - Aplicação de controle de comissões de uma papelaria
 
-## Acesso Admin
-* User: admin
-* Pass: password
-
 ## 1 - Requisitos
 - Nodejs v20.16.0
 
