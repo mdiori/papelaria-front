@@ -1,18 +1,11 @@
 # Frontend - Aplicação de controle de comissões de uma papelaria
 
-## App
-
-* Live: http://34.206.21.27:3000/
-
-## Admin
-
-* Admin: http://34.206.21.27:8000/admin
+## Acesso Admin
 * User: admin
 * Pass: password
 
 ## 1 - Requisitos
-
-- Nodejs.
+- Nodejs v20.16.0
 
 ## 2 - Rodar o frontend em modo de desenvolvimento
 
@@ -22,10 +15,6 @@
 
 ```
 npm i
-
-ou
-
-yarn
 ```
 
 4. Iniciar o frontend com o comando:
@@ -36,8 +25,8 @@ npm start
 
 ## 4 - Implementações Futuras
 
-- Implementar Typescript urgente.
-- Componentizar melhor os elementos.
-- Adicionar validação com a lib Zod.
-- Implementar a autentição de acesso com login.
-- Criar páginas de cadastro de produtos, clientes e empregados.
+- Implementar TypeScript.
+- Melhorar a componentização dos elementos.
+- Adicionar validação utilizando a biblioteca Zod.
+- Implementar autenticação de acesso com sistema de login.
+- Desenvolver páginas para o cadastro de produtos, clientes e empregados.
