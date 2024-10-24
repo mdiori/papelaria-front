@@ -84,10 +84,6 @@ Os seguintes requisitos garantem que a solução atenda às necessidades funcion
 4. **Testes Unitários**:
    - O projeto deve conter testes unitários para garantir a funcionalidade do sistema.
 
-5. **Pontos Extras**:
-   - Disponibilização da API rodando em um servidor remoto.
-
-6. **Frontend**:
+5. **Frontend**:
    - Utilizar Javascript e ReactJs para desenvolver o frontend.
    - A aplicação frontend deve se comunicar com a API desenvolvida para obter e gravar dados.
-   - Pontos extras para a disponibilização da aplicação em um servidor remoto.
